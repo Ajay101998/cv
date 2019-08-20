@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function do1()
+		{
+			var b=parseInt(document.getElementById('t1').value);
+			var c=parseInt(document.getElementById('t3').value);
+			var a=document.getElementById('t2').value;
+			if (a=='+')
+			 {
+			 	
+			 	document.getElementById('t4').value=(b+c);
+			 }
+			else if (a=='-')
+			 {
+			 	
+			 	document.getElementById('t4').value=(b-c);
+			 }
+			else if(a=='*')
+			{
+				
+				document.getElementById('t4').value=(b*c);
+			} 
+			else if(a=='/')
+			{
+				
+				document.getElementById('t4')=(b/c);
+			}
+	
+		}
+	</script>
+
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<th><input type="text" id="t1"></th>
+				<th>
+					<select id="t2">
+						<option>+</option>
+						<option>-</option>
+						<option>
+							*
+						</option>
+						<option>/</option>
+					</select>
+				</th>
+				<th><input type="text" id="t3"></th>
+				<th>=</th>
+				<th><input type="text" id="t4"></th>
+			</tr>
+			<tr>
+				<th>x</th>
+				<th></th>
+				<th>y</th>
+				<th></th>
+				<th>result</th>
+			</tr>
+			<tr>
+				<th></th>
+				<th colspan="2">
+					<input type="button" value="SHOW" onclick="do1()">
+				</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>
